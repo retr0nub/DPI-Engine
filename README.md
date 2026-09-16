@@ -75,6 +75,8 @@ pcap reader/writer round-trip, the packet parser, and app classification
 ---------------------------------------------------------------------------------
 # DPI Engine — Deep Packet Inspection System
 
+This document explains everything about this project - from basic networking concepts to the complete code architecture. After reading this, you should understand exactly how packets flow through the system without needing to read the code.
+
 A Python-based Deep Packet Inspection (DPI) engine for analyzing network traffic captured in PCAP files.
 
 The project parses packets, tracks network flows, extracts application-level information such as TLS SNI, HTTP Host, and DNS queries, classifies traffic, applies configurable blocking rules, and writes filtered traffic to an output PCAP.
