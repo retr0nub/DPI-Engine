@@ -46,7 +46,6 @@ Enterprises: Block social media on office networks
 Parental Controls: Block inappropriate websites
 Security: Detect malware or intrusion attempts
 What Our DPI Engine Does:
-
 User Traffic (PCAP) → [DPI Engine] → Filtered Traffic (PCAP)
                            ↓
                     - Identifies apps (YouTube, Facebook, etc.)
