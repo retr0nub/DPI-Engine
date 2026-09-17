@@ -13,7 +13,7 @@ The engine parses Ethernet/IPv4/TCP/UDP packets without Scapy, inspects
 uses Python multiprocessing with flow affinity for parallel processing.
 
 ## Table of Contents
-
+- [What is DPI](#WhatisDPI?)
 - [Features](#features)
 - [Architecture](#architecture)
 - [Why DPI?](#why-dpi)
@@ -36,6 +36,22 @@ uses Python multiprocessing with flow affinity for parallel processing.
 - [Learning Path](#learning-path)
 - [Contributing](#contributing)
 - [License](#license)
+
+## What is DPI?
+Deep Packet Inspection (DPI) is a technology used to examine the contents of network packets as they pass through a checkpoint. Unlike simple firewalls that only look at packet headers (source/destination IP), DPI looks inside the packet payload.
+
+Real-World Uses:
+ISPs: Throttle or block certain applications (e.g., BitTorrent)
+Enterprises: Block social media on office networks
+Parental Controls: Block inappropriate websites
+Security: Detect malware or intrusion attempts
+What Our DPI Engine Does:
+
+User Traffic (PCAP) → [DPI Engine] → Filtered Traffic (PCAP)
+                           ↓
+                    - Identifies apps (YouTube, Facebook, etc.)
+                    - Blocks based on rules
+                    - Generates reports
 
 ## Features
 
